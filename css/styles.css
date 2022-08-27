@@ -318,7 +318,7 @@ img{
     margin-bottom: 16px;
 }
 .social-icon{
-    fill:var(--icons);
+    fill: currentColor;
     
 }
 .social-list{
@@ -333,15 +333,15 @@ img{
     width: 44px;
     height: 44px;
     border-radius: 50%;
+    color: var(--icons);
+    background-color: var(--bgd-light-color);
 }
 .social-link:hover,
 .social-link:focus{
+    color: var(--light-font-color);
     background-color: var(--accent-color);
 }
-.social-link:hover .social-icon,
-.social-link:focus .social-icon{
-    fill: var(--light-font-color)
-}
+
 
 /*Regular clients*/
 .company-list{
@@ -350,7 +350,7 @@ img{
     column-gap: 30px;
 }
 .company-icon{
-    fill: var(--icons);
+    fill: currentColor;
 }
 .company-link{
     display: flex;
@@ -358,11 +358,13 @@ img{
     justify-content: center;
     width: 170px;
     height: 92px;
+    color: var(--icons);
     border: 1px solid var(--icons);
     border-radius: 4px;
 }
 .company-link:hover,
 .company-link:focus{
+    color: var(--accent-color);
      border: 1px solid var(--accent-color);
 }
 .company-link:hover .company-icon,
